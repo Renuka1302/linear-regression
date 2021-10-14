@@ -47,10 +47,10 @@ test<-subset(car,split=F)
 nrow(training)
 nrow(test)
 cor(car)# to check the correlation
-#heatmap(cor(car))
 #?heatmap
-#install.packages("corrgram")
-#library(corrgram)
+install.packages("corrgram")
+library(corrgram)
+heatmap(cor(car))
 #corrgram(Boston)
 ################################
 #building a linear regression model with training dataset
